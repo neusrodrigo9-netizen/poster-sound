@@ -7,28 +7,23 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: flex-start; 
   color: #da227e;
 }
 
 /* Títol */
 #titol {
   font-size: 55px;
-  justify-content: center;
   font-weight: bold;
   color: #d63384; /* rosa fort */
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  align-items: center;
-
+  margin: 40px 0 20px 0; /* marges verticals igualats */
+  width: 100%;
 }
 
-
-
-/* Contenedor del llenç */
+/* Contenidor del llenç */
 #contenedor-p5 {
-  width:70%;
+  width: 70%;
   max-width: 1200px;
   margin: 20px auto 60px;
   border: 6px solid #d63384; /* borde rosa */
@@ -37,7 +32,9 @@ html, body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* Barra de botons */
@@ -48,7 +45,6 @@ html, body {
   padding: 16px;
   border-bottom: 1px solid #eee;
   background: #fff0f6; /* rosa molt clar */
-  justify-content: center;
 }
 
 /* Botons roses */
@@ -65,9 +61,9 @@ button {
 }
 
 button:hover {
-  background: #ff3385; /* rosa més fosc al pasar el mouse */
+  background: #ff3385; /* rosa més fosc al passar el mouse */
 }
 
 button:active {
-  transform: scal
+  transform: scale(0.95);
 }
